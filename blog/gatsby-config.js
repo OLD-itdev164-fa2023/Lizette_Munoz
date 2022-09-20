@@ -3,15 +3,22 @@ module.exports = {
     title: `Gatsby Blog`,
     description: `ITDEV-164 Gatsby Blog`,
     author: `Lizette Munoz`,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
       name:`Lizette Munoz`,
       company:`Blogs Inc.`,
       address:`PO Box 1234`
-    },
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    }
   },
   plugins: [
     `gatsby-plugin-image`,
+     {
+      resolve:`gatsby-source-contentful`,
+      options:{
+        spaceId:`y0x56jdc8q42`,
+        accessToken:`GWntaaIQ8g2wgW9HKDseTmja9yFUXJ4RR6TFh-3ucOM`
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,6 +26,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+   
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
