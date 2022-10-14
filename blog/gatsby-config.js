@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
+    title: `Blogs Inc.`,
     description: `ITDEV-164 Gatsby Blog`,
     author: `Lizette Munoz`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
